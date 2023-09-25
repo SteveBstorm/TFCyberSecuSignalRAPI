@@ -17,4 +17,8 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SignalRAPI_DAL\SignalRAPI_DAL.csproj" />
+  </ItemGroup>
+
 </Project>

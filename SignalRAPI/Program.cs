@@ -1,4 +1,8 @@
+using SignalRAPI.Controllers;
 using SignalRAPI.Hubs;
+using SignalRAPI_DAL.Repositories;
+using SignalRAPI_DAL.Services;
+using System.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,9 +19,14 @@ builder.Services.AddCors(o => o.AddPolicy("myPolicy", options =>
             .AllowAnyHeader()
             .AllowAnyMethod()));
 
+builder.Services.AddScoped<SqlConnection>(sp => new SqlConnection(builder.Configuration.GetConnectionString("default")));
+
+builder.Services.AddScoped<IArticleRepo, ArticleService>();
+
 builder.Services.AddSignalR();
 
 builder.Services.AddSingleton<ChatHub>();
+builder.Services.AddSingleton<ArticleHub>();
 
 var app = builder.Build();
 
@@ -37,5 +46,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.MapHub<ChatHub>("chat");
+app.MapHub<ArticleHub>("articlehub");
 
 app.Run();

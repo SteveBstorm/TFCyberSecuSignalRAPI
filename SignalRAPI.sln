@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI", "SignalRAPI\SignalRAPI.csproj", "{699D3E24-4B1A-4063-90CD-D3A9F7FBA3B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRAPI", "SignalRAPI\SignalRAPI.csproj", "{699D3E24-4B1A-4063-90CD-D3A9F7FBA3B2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ArticleDB", "ArticleDB\ArticleDB.sqlproj", "{3B6CCCED-219F-4377-9583-44E0107824D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI_DAL", "SignalRAPI_DAL\SignalRAPI_DAL.csproj", "{591DA323-5C59-4966-A336-AC31ADC3A258}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,16 @@ Global
 		{699D3E24-4B1A-4063-90CD-D3A9F7FBA3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{699D3E24-4B1A-4063-90CD-D3A9F7FBA3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{699D3E24-4B1A-4063-90CD-D3A9F7FBA3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B6CCCED-219F-4377-9583-44E0107824D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B6CCCED-219F-4377-9583-44E0107824D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B6CCCED-219F-4377-9583-44E0107824D4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3B6CCCED-219F-4377-9583-44E0107824D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B6CCCED-219F-4377-9583-44E0107824D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B6CCCED-219F-4377-9583-44E0107824D4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{591DA323-5C59-4966-A336-AC31ADC3A258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591DA323-5C59-4966-A336-AC31ADC3A258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591DA323-5C59-4966-A336-AC31ADC3A258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591DA323-5C59-4966-A336-AC31ADC3A258}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
